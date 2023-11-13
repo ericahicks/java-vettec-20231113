@@ -18,7 +18,7 @@ package com.skillstorm.training;
  *   - the class with the main method must be public (aka visible to everyone)
  *   
  */
-public class HelloWorld {
+public class HelloWorld { 
 	
 	/*
 	 * static - belongs to the class (we don't need an object to use this method)
@@ -28,7 +28,8 @@ public class HelloWorld {
 	 * String - a sequence of characters
 	 * 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) { // MEMORIZE
+		
 		System.out.println("Hello World");
 		System.out.println();
 	}
