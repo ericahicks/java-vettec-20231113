@@ -52,8 +52,6 @@ public class OrderOfOperations {
 		
 		System.out.println("1" + 2 * 3); // 16
 		
-		
-		
 	}
 
 }

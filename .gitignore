@@ -38,3 +38,4 @@ buildNumber.properties
 
 # Other files to ignore
 .metadata
+.settings
