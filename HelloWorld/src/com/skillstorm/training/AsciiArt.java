@@ -8,6 +8,7 @@ public class AsciiArt {
 				+ "  (o o)   (o o)\n"
 				+ " (  V  ) (  V  ) \n"
 				+ "/--m-m- /--m-m-");
+		
 	}
 
 }
