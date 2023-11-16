@@ -23,6 +23,9 @@ public class StringFormatExamples {
 		 * 
 		 */
 		
+		// NOTE: String.format("....", arg) works the same as System.out.format("....", arg)
+		//       The difference is String.format() returns a String 
+		//                    and System.out.format() prints it out
 		System.out.format("%10s\n", "Students");
 		System.out.println("-------------");
 		String name = "Rod";
@@ -31,6 +34,34 @@ public class StringFormatExamples {
 		System.out.format("%10s%n", name);
 		name = "Timothy";
 		System.out.format("%10s%n", name);
+		
+		// Example 2: Printing out the binary of an int with width 32 padded with 0s
+		System.out.println("Binary version of the int 1000");
+		String binaryString = Integer.toBinaryString(1000);
+		System.out.println(binaryString);
+		
+		System.out.println("\nUse a formatter to set the width to 32:");
+		String formattedBinaryString = String.format("%32s", binaryString);
+		System.out.println(formattedBinaryString);
+		
+		System.out.println("\nFill the whitespace with 0s");
+		String zeroPaddedBinaryString = formattedBinaryString.replace(" ", "0");
+		System.out.println(zeroPaddedBinaryString);
+		
+		byte b = (byte) 1000;
+		System.out.println("\nBinary version of the int 1000 narrow casted to a byte");
+		String byteBinaryString = Integer.toBinaryString(b);
+		System.out.println(byteBinaryString);
+		
+		System.out.println("\nConvert binary string to number using Integer.parseInt(str,radix)");
+//		System.out.println(Byte.valueOf("10000000", 2)); // Bug is Byte.valueOf("10000000", 2) gives error out of range
+		System.out.println(Byte.valueOf("-10000000", 2)); // Bug is Byte.valueOf("10000000", 2) gives error out of range
+		
+		System.out.println("\nUse substring to get the 8 right-most bits");
+		int length = byteBinaryString.length();
+		String leftMost8Bits = byteBinaryString.substring(length - 8 - 1);
+		System.out.println(leftMost8Bits);
+		
 	}
 	
 
