@@ -16,7 +16,16 @@ git pull --all
 ```
 git branch -a
 ```
-You should see all your local and remote branches
+You should see all your local and remote branches like 
+
+```
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/wk02-day02-start
+  remotes/origin/wk02-day03-start
+```
 
 ### STEP 3: Merge the starter code into your main branch
 ```
@@ -25,7 +34,7 @@ git merge <name-of-starter-branch>
 ```
 For example, 
 ```
-git merge wk02-day03-start
+git merge origin/wk02-day03-start
 ```
 
 And now, you should be good!
