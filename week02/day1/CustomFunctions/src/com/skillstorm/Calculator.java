@@ -10,6 +10,9 @@ public class Calculator {
 		System.out.println(sum);
 		
 		// Divide example
+		// Compile time polymorphism
+		//  - The Java Compiler first looks for an exact match method name(types)
+		//  - If there is no exact match, it looks for a method with compatible param types
 		System.out.println(divide(1, 2)); // calls the divide(int,int)
 		
 		System.out.println(divide(1.0, 2.0)); // calls the divide(double,double) method
