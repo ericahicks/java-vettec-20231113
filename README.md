@@ -12,7 +12,7 @@ To use the starter code, you must be able to pull the code from this branch and 
 ```
 git pull --all
 ```
-### STEP 2: Make sure you have the starter code locally
+### STEP 2: Make sure you now have the starter code branch
 ```
 git branch -a
 ```
