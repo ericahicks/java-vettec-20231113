@@ -58,9 +58,11 @@ public class CreatingArraysExamples {
 		// Why does it print the letters instead of the memory?
 		//    Like String java automatically does follow the reference and print the contents in memory
 		System.out.println(charray); // very cool, it prints the letters not memory address
+		
 		char charray2[] = "bfghi".toCharArray();
 		System.out.println(charray2); // very cool, it prints the letters not memory address
 		System.out.println(charray[0]); // prints the char because treated as ascii value
+		
 		String strray[] = {"b", "f", "g", "h", "i"}; // does not work with String[]
 		System.out.println(strray); // prints memory address [Ljava.lang.String;@4e25154f
 		
