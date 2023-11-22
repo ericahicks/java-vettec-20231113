@@ -14,7 +14,7 @@ public class CreatingArraysExamples {
 		
 		///////////////////////////////////////////////////////////////////////////////
 		// Example 2:
-		// Using ____ ??????
+		// Using new operator
 		int[] evens = new int[10];
 		System.out.format("Printing out the value in an array variable: %s%n", evens);
 		System.out.format("Printing out an array converted to a String: %s%n", Arrays.toString(evens));
@@ -25,7 +25,9 @@ public class CreatingArraysExamples {
 													// doesnt allow us to provide both
 		
 		////////////////////////////////////////////////////////////////////////
-		// Example 3:
+		// Example 3: 
+		// Using new and literal values
+		// 
 		// Invalid Examples:
 		//  = new int[4]{};
 		//  = new int[4]{1, 2, 3, 4};
@@ -36,7 +38,7 @@ public class CreatingArraysExamples {
 		System.out.println();
 		
 		/////////////////////////////////////////////////////////////////////////////////
-		// Example 4: How does Java decide the type of the literal values? 
+		// Aside: How does Java decide the type of the literal values? 
 		// 98 is an int
 		// 98L is a long
 		// 9.8 is an double
@@ -46,10 +48,10 @@ public class CreatingArraysExamples {
 		// Example 5:
 		// How are we able to store what Java normally types as an int into a char without casting?
 		char charray[] = {98, 102, 103, 104, 105}; // chars are really just numbers between 0 and 62,000
-		// 
+
 		// literals between 0 and 62000 can be stored as char
-		// literals between -128 and 127 can be stored as bytes
 		// literals between -32000 and 32000 can be stored as short
+		// literals between -128 and 127 can be stored as bytes
 
 		/////////////////////////////////////////////////////////////////////////////////
 		// Example 6:
