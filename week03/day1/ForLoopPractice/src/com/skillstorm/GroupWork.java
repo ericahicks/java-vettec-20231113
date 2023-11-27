@@ -23,6 +23,8 @@ public class GroupWork {
 	 * 
 	 */
 	public static String challenge1(String s) {
+		if (s == null || s.isEmpty() || s.length() == 1) 
+			return s;
 		// YOUR CODE HERE 
 		return null;
 	}
