@@ -1,6 +1,17 @@
-package com.skillstorm.enhanced.forloops;
+package com.skillstorm;
 
-public class ChallengeEnhancedForLoops {
+public class GroupWork {
+	public static void main(String[] args) {
+		// Warm-up 1: Count to 100 by 2's
+		
+		
+		// Warm-up 2: Add up the numbers 1 to 10
+		int result = 0;
+		// YOUR CODE HERE
+		System.out.println(result);
+	}
+	
+
 	
 	/**
 	 * Reverse a String. 
