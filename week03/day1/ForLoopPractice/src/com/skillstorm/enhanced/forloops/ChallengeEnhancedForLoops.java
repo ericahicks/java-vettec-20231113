@@ -1,6 +1,6 @@
 package com.skillstorm.enhanced.forloops;
 
-public class EnhancedForLoopExamples {
+public class ChallengeEnhancedForLoops {
 	
 	/**
 	 * Reverse a String. 
@@ -25,5 +25,9 @@ public class EnhancedForLoopExamples {
 	 * @return A new String with every other letter capitalized
 	 * 
 	 */
+	public static String challenge2(String s) {
+		// YOUR CODE HERE
+		return null;
+	}
 
 }

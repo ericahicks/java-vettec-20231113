@@ -11,15 +11,17 @@ public class LectureExamples {
 	 * @throws InterruptedException 
 	 * 
 	 */
-	public static void challenge() throws InterruptedException { // if you don't want to bother try-catch
+	public static void challenge() throws InterruptedException { // if you don't want to bother try-catching
 		// YOUR CODE HERE
 		for (int i = 10; i <= 100; i += 10) {
-			Thread.sleep(1000); // milliseconds
+			Thread.sleep(1000); // milliseconds to pause execution before continuing
 			System.out.println(i);
 		}
 	}
 	
-	// variations
+	// Variations
+	// use < 101 instead of <=100
+	// use i = 1; i <= 10; i++ with a print statement of i * 10
 	public static void challengeV2() {
 		for (int j = 1; (j * 10) < 101;  j++) {
 			System.out.println(j * 10);
