@@ -49,7 +49,6 @@ public class GroupWork {
 	public static String challenge1(String str) {
 		if (str == null || str.isEmpty() || str.length() == 1)
 			return str;
-		// YOUR CODE HERE
 		String startingstr = str;
 		for (int n : str.toCharArray()) {
 			if (str == startingstr) {
@@ -88,6 +87,8 @@ public class GroupWork {
 	 * 
 	 * @param s The String to capitalize
 	 * @return A new String with every other letter capitalized
+	 * 
+	 * @author Team Saber Tooth Tiger - Sam, Saugat, Sean
 	 * 
 	 */
 	public static String challenge2(String s) {
