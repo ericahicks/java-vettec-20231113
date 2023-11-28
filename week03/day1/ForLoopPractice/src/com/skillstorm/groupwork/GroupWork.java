@@ -96,7 +96,7 @@ public class GroupWork {
 			if (i % 2 == 0) {
 				newString += s.toUpperCase().charAt(i);
 			} else {
-				newString += s.charAt(i);
+				newString += s.toLowerCase().charAt(i);
 			}
 		}
 		return newString;
