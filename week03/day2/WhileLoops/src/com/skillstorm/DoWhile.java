@@ -21,6 +21,7 @@ public class DoWhile {
 			x = scanner.nextInt(); 
 		} while (!valid(x));
 		System.out.println("Thank you for entering the number " + x);
+		scanner.close();
 	}
 	
 	public static boolean valid(int x) {
