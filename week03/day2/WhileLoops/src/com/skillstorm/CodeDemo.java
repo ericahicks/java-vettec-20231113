@@ -91,9 +91,9 @@ public class CodeDemo {
 	 */
 	public static int[] append(int[] arr1, int[] arr2) {
 		if (arr1 == null || arr1.length == 0)
-			return arr2;
+			return copy(arr2);
 		if (arr2 == null || arr2.length == 0)
-			return arr1;
+			return copy(arr1);
 		
 		// Calculate the length of the new array
 		int length = arr1.length + arr2.length;
