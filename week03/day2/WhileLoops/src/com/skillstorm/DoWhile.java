@@ -20,6 +20,7 @@ public class DoWhile {
 			System.out.print("Enter a number  between 1 and 10 (inclusive): ");
 			x = scanner.nextInt(); 
 		} while (!valid(x));
+		System.out.println("Thank you for entering the number " + x);
 	}
 	
 	public static boolean valid(int x) {
