@@ -23,8 +23,8 @@ public class CodeDemo {
 	 * @author Team
 	 */
 	public static int[] copyRange(int[] numbers, int start, int end) {
-		int[] copy = {};
-		return copy;
+		int[] answer = {};
+		return answer;
 	}
 	
 	/**
@@ -32,8 +32,8 @@ public class CodeDemo {
 	 * @author Team
 	 */
 	public static int[] append(int[] arr1, int[] arr2) {
-		int[] result = {};
-		return result;
+		int[] answer = {};
+		return answer;
 	}
 	
 	/**
