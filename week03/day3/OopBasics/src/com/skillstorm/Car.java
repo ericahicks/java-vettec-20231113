@@ -14,7 +14,8 @@ public class Car {
 	boolean isRegistered;
 	double mileage;
 	
-	double gasInTank;
+//	double gasInTank;
+//	int odometer;
 
 	public Car() { // no-arg constructor
 		// here I set my own defaults
@@ -75,5 +76,19 @@ public class Car {
 
 	// To generate a Constructor or toString method
 	// RT click > Source > Generate toString...
+	
+
+	double gasInTank;
+	int odometer;
+	
+	// Instance methods are able to use the values stored in the instance variables
+	// using this.nameOfInstanceVariable
+	public void drive(double miles) {
+		// The odometer will increase
+		this.odometer += miles;
+		// The gasInTank will decrease
+		this.gasInTank -= miles / this.mileage;
+		
+	}
 
 }
