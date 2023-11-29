@@ -26,6 +26,36 @@ public class GroupWork {
 	}
 
 	/**
+	 * Append returns a new array with all the elements of arr1 and all the elements of arr2
+	 * @param arr1 An int[] array
+	 * @param arr2 An int[] array
+	 * @return A new array with all the elements of arr1 and all the elements of arr2
+	 *         If arr1 is null or empty, returns arr2
+	 *         If arr2 is null or empty, returns arr1
+	 * @author Team Dire Worlf - Josh, Tim, Matt
+	 */
+	public static int[] append(int[] arr1, int[] arr2) {
+		if (arr1 == null || arr1.length == 0)
+			return arr2;
+		if (arr2 == null || arr2.length == 0)
+			return arr1;
+
+		int[] result = new int[arr1.length + arr2.length];
+
+		int counter = 0;
+		while (counter < result.length) {
+			if (counter < arr1.length) {
+				result[counter] = arr1[counter];
+			} else {
+				result[counter] = arr2[counter - arr1.length];
+			}
+			counter++;
+		}
+
+		return result;
+	}
+
+	/**
 	 * Write a method that returns true if all the values in a number array are
 	 * even.
 	 * 
