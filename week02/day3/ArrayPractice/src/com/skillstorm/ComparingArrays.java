@@ -1,7 +1,7 @@
 package com.skillstorm;
 
 import java.util.Arrays;
-
+// This example was not covered in lecture so you will not be responsible for knowing == vs Arrays.equals on the exam Wed 11/29
 // Use Arrays.equals(_,_) NOT == with arrays
 public class ComparingArrays {
 	
