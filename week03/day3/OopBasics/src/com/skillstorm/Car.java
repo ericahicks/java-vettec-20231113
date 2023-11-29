@@ -1,7 +1,7 @@
 package com.skillstorm;
 
 public class Car {
-
+// Make sure to organize your code with the properties at the top, the constructors, then the methods
 	int year;
 	String make;
 	String model;
