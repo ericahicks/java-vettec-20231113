@@ -2,6 +2,7 @@ package com.skillstorm;
 
 public class Car {
 // Make sure to organize your code with the properties at the top, the constructors, then the methods
+	// Style guide: https://www.oracle.com/java/technologies/javase/codeconventions-fileorganization.html
 	int year;
 	String make;
 	String model;
