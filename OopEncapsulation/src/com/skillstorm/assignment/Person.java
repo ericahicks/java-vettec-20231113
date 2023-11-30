@@ -34,7 +34,14 @@ public class Person {
 		// Do I want to be able to see later if the friend changes their name
 		// or do I want a snapshot in time (a copy) of the friend
 //		return new Person(this.bestFriend.name, this.bestFriend.DOB, this.bestFriend.bestFriend);
-		return bestFriend;
+		return bestFriend; // returns a reference to the friend
+	}
+	
+	public void setBestFriend(Person friend) {
+		if (friend != null) {
+			this.bestFriend = friend;
+			// probably don't want a copy here this.bestFriend = new Person(friend);
+		}
 	}
 	
 	public Person(String name, LocalDate dob) {
