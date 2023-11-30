@@ -14,9 +14,11 @@ public class GroupGenerator {
 			int chosenStudent = (int) (Math.random() * (numStudents - 1));
 			int groupNum = i / numStudentsPerGroup;
 			int positionInGroup = i % numStudentsPerGroup;
+			// Put the student into the group array of st
 			groups[groupNum][positionInGroup] = students[chosenStudent];
-			// Remove student from list of Students still needing to be placed
-			
+			// Remove student from list of Students
+			students[i] = students[numStudents - i]; 
+			students[numStudents - i] = null;
 		}
 		return groups;
 	}
