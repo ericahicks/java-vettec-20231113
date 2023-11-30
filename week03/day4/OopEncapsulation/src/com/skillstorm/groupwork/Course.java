@@ -32,8 +32,11 @@ public class Course {
 	// Only allow changes to the students array through these methods
 	// DO NOT ALLOW DIRECT ACCESS TO THE STUDENTS ARRAY
 	public void enroll(Student student) {
-		this.students[numberOfStudents] = student;
-		numberOfStudents++;
+		if (numberOfStudents < MAX_NUM_STUDENTS && student.numCourses < student.MAX_NUM_COURSES) {
+			this.students[numberOfStudents] = student;
+			student.add(this); // here I use the this keyword as a reference to the object itself
+			numberOfStudents++;
+		}
 	}
 	
 	public void withdraw(Student student) {
