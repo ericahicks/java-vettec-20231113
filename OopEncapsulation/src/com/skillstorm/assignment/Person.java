@@ -9,6 +9,8 @@ public class Person {
 	// this is a constant, so mark it as final and use capslock
 	final LocalDate DOB; // must be initialized here or in constructor and cannot be changed
 	
+	Person bestFriend;
+	
 	public Person(String name, LocalDate dob) {
 		this.name = name;
 		this.DOB = dob;
