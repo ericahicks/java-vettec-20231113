@@ -10,8 +10,11 @@ public class ClassC {
 		// ClassA is from a separate package!
 		ClassA a = new ClassA();
 		System.out.println(a.x); 
+//		System.out.println(a.hmmm);
 //		System.out.println(a.y); 
 //		System.out.println(a.z);
 	}
+	
+	
 
 }

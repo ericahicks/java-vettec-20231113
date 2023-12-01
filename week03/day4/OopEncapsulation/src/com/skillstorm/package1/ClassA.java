@@ -3,14 +3,24 @@ package com.skillstorm.package1;
 public class ClassA {
 	
 	public int x = 1;
+	protected int hmmm = 0;
 /* default */ int y = 2;
 	private int z = 3;
+	
 	
 	public static void main(String[] args) {
 		ClassA a = new ClassA();
 		System.out.println(a.x);
+		System.out.println(a.hmmm);
 		System.out.println(a.y);
 		System.out.println(a.z);
+	}
+	
+	public void printProperties() {
+		System.out.println(this.x);
+		System.out.println(this.hmmm);
+		System.out.println(this.y);
+		System.out.println(this.z);
 	}
 
 }

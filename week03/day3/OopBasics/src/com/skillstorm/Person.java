@@ -10,12 +10,19 @@ public class Person {
 	String sport;
 	
 	public /* Person */ Person(String name) {
-		this.name = name;
+		super();
+//		this(); // can't call this
+		this.name = name; // I can use the this keyword still
 		this.sport = "Soccer";
 		this.age = 60;
 		Person.population++;
 //		population++; // alternative to access the static property omit the class name
 		// no return statement but it is returning an object of type Person with properties
+	}
+	
+	public Person() {
+//		super();
+		this("JOhn Doe"); // I can't call super if I call this
 	}
 
 }
