@@ -12,7 +12,7 @@ public class StudentCoursesTest {
 		course.enroll(null);
 		
 		Student student = new Student();
-		student.add(course);
+//		student.add(course);
 	}
 
 }

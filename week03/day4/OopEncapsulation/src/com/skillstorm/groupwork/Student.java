@@ -1,6 +1,7 @@
 package com.skillstorm.groupwork;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
 
@@ -58,8 +59,21 @@ public class Student {
 		return str;
 	}
 	
-	
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return MAX_NUM_COURSES == other.MAX_NUM_COURSES && Arrays.equals(courses, other.courses)
+				&& Double.doubleToLongBits(gpa) == Double.doubleToLongBits(other.gpa)
+				&& Objects.equals(name, other.name) && numCourses == other.numCourses;
+	}
+
 	public static void main(String[] args) {
 		Student s = new Student();
 		System.out.println(s == s); // compares memory addresses

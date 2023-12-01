@@ -41,7 +41,7 @@ public class Course {
 	
 	public void withdraw(Student student) {
 		for (int i = 0; i < numberOfStudents; i++) {
-			if (students[i] == student) {
+			if (student.equals(students[i])) { // compares memory addresses
 				students[i] = students[numberOfStudents - 1];
 				students[numberOfStudents - 1] = null;
 				break;
