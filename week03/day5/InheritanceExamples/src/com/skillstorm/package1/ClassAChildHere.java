@@ -7,14 +7,14 @@ public class ClassAChildHere extends ClassA {
 		System.out.println(a.x); // yes can print bc public 
 		System.out.println(a.hmmm); // yes bc protected lets us in same package and child classes
 		System.out.println(a.y); // yes bc in same package
-//		System.out.println(a.z); // no
+		System.out.println(a.z); // no
 	}
 	
 	public void printProperties() {
-//		System.out.println(this.x);
-//		System.out.println(this.hmmm);
-//		System.out.println(this.y);
-//		System.out.println(this.z);
+		System.out.println(this.x);
+		System.out.println(this.hmmm);
+		System.out.println(this.y);
+		System.out.println(this.z);
 	}
 
 }
