@@ -6,7 +6,7 @@ public class Person {
 	private Vehicle vehicle;
 	
 	void commute() {
-		// TODO 3 commute using vehicle's go method
+		// TODO 4 commute using vehicle's go method
 	}
 
 }

@@ -2,6 +2,13 @@ package com.skillstorm.groupwork;
 
 public class VehicleTests {
 	
+	public static void main(String[] args) {
+		test1();
+		test2();
+		test3();
+		test4();
+		test5();
+	}
 	
 	/* Test 1: */
 	public void test1() {
@@ -26,6 +33,12 @@ public class VehicleTests {
 		Vehicle vehicle1 = new Car();
 		Vehicle vehicle2 = new Train();
 		Vehicle vehicle3 = new Bike();
+	}
+	
+	/* Test 5: Commute */
+	public void test5() {
+		Person bob = new Person("Bob", new Bike());
+		bob.commute();
 	}
 
 
