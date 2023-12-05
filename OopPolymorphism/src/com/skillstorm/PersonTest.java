@@ -17,7 +17,6 @@ public class PersonTest {
 		
 	}
 	
-	
 }
 class Person {
 	
@@ -26,6 +25,10 @@ class Person {
 	
 	void cut() {
 		System.out.println("Shaving all hair off");
+	}
+	
+	void goToWork() {
+		
 	}
 }
 class HairStylist extends Person {
