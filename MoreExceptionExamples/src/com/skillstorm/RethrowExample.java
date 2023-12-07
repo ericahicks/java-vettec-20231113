@@ -14,12 +14,12 @@ public class RethrowExample {
 		// Create a person
 		Person person = new FrugalPerson();
 		// Create an apple
-		Food apple = new Apple();
-		apple.setName("pink lady apple");
-		apple.setRotten(true);
+		Food food = new Mango();
+		food.setName("rainbow mango");
+		food.setRotten(true);
 		// Eat the apple
 		try {
-			person.eat(apple);
+			person.eat(food);
 		} catch (RottenFoodException e) {
 			System.out.println(e.getMessage());
 		}
@@ -50,6 +50,18 @@ class FrugalPerson extends Person {
 			System.out.println("Eating the " + food);
 		}
 	}
+	
+	// Rethrow an exception to make it more specific
+	public void eat(Mango fruit) throws RottenMangoException {
+		// call the parents eat(food) then rethrow a different excpetion
+		try {
+			super.eat(fruit);
+		} catch (RottenFoodException e) {
+			throw new RottenMangoException(e.getMessage(), e);
+		}
+	}
+	
+	
 }
 
 class Food {
@@ -103,9 +115,15 @@ class RottenFoodException extends Exception {
 		// super(); // only the no-arg constructor is called automatically
 		super(message);
 	}
+	
+	public RottenFoodException(String message, Throwable cause) {
+		super(message, cause);
+	}
 
 }
 
-class RottenAppleException extends RottenFoodException {
-	
+class RottenMangoException extends RottenFoodException {
+	public RottenMangoException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }
