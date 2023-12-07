@@ -1,11 +1,13 @@
-package com.skillstorm.groupwork;
+package com.skillstorm.groupwork.employees;
+
+import com.skillstorm.groupwork.exceptions.InvalidWageException;
 
 public class HourlyEmployee extends Employee {
-	// TODO 2 encapsulate and throw exception in the setter
+	// TODO 02 encapsulate HourlyEmployee 
 	double hoursWorked;
 	double wage; // per hour
 	
-	// TODO 3 override calculatePay
+	// TODO 04 override calculatePay
 	@Override
 	public double calculatePay() {
 		return 0;
@@ -14,7 +16,8 @@ public class HourlyEmployee extends Employee {
 	public double getHoursWorked() {
 		return hoursWorked;
 	}
-
+	
+	// TODO 07a throw IllegalArgumentException
 	public void setHoursWorked(double hoursWorked) {
 		this.hoursWorked = hoursWorked;
 	}
@@ -23,7 +26,7 @@ public class HourlyEmployee extends Employee {
 		return wage;
 	}
 
-	// Throw custom exception that checks valid wage
+	// TODO 07b throw custom exception in the setter
 	// Federal minimum wage is $7.25
 	public void setWage(double wage) throws InvalidWageException {
 		this.wage = wage;
