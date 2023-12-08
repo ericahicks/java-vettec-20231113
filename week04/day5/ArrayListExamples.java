@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayListExamples {
 
@@ -65,6 +66,11 @@ public class ArrayListExamples {
         fruits.add("peach");
         fruits.add("pineapples");
         fruits.add("durian");
+        
+        ArrayList<String> veggies = new ArrayList<>(new String[] {"carrot", "tomato", "cucumber"
+        });
+        new ArrayList<String>(Arrays.asList("brocolli", "spinach"));
+        		
 
         System.out.println(fruits);
 
