@@ -3,7 +3,12 @@ package com.skillstorm.groupwork;
 public class TestStudent {
 	
 	public static void main(String[] args) {
+		// TODO 06 Make sure Student tests pass
+		test1();
 		test2();
+		test3();
+		test4();
+		test5();
 	}
 	
 	public static void test1() {

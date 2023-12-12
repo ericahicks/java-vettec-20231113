@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class TestStudentUtilities {
 	
 	public static void main(String[] args) {
+		// TODO 07 Make sure StudentUtilities tests pass
 		test1();
 		test2();
 		test3();

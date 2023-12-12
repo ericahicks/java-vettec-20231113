@@ -28,19 +28,19 @@ public class WrapperPractice {
 		///////////////////////////////////////////////
 		// Example 2: Autoboxing Limitations
 		int a = 1;
-		double b = a; // works ____ --> ____
+		double b = a; // works int --> double
 		Integer x = 1;
-//		Double y = 2; // doesn't work ____ -x-> ____
+//		Double y = 2; // doesn't work int -x-> Double
 		
 		///////////////////////////////////////////////
 		// Example 3: Autoboxing Limitations
-//		Double y = x; // doesn't work ____ -x-> _____
-//		Double y = (Double) x; // doesn't work ____ -x-> ____
-		Double c = 1.0; // ____ --> ____
+//		Double y = x; // doesn't work Integer -x-> Double
+//		Double y = (Double) x; // doesn't work Integer -x-> Double
+		Double c = 1.0; // double --> Double
 		
 		///////////////////////////////////////////////
 		// Example 4: Workarounds
-		Double y = (double) x; // works ____ --> ____ --> ____
+		Double y = (double) x; // works Integer --> int --> double --> Double
 		Double w = Double.valueOf(x); // works
 	}
 	
