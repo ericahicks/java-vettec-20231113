@@ -25,16 +25,16 @@ public class TestStudent {
 	public static void test2() {
 		Student sam = new Student("Sam");
 		sam.addGrade("A");
-		System.out.println(sam.getGrades());
+		System.out.println("Grades should contain A: " + sam.getGrades());
 		sam.addGrade("E");
-		System.out.println(sam.getGrades());
+		System.out.println("Grades should not contain E: " + sam.getGrades());
 	}
 	
 	public static void test3() {
 		Student sam = new Student("Sam");
 		sam.addGrade("A");
 		double gpa = sam.calculateGPA();
-		System.out.printf("Sam's GPA is %.2f", gpa);
+		System.out.printf("Sam's GPA should be 4.0 and is %.2f", gpa);
 		
 	}
 	
@@ -44,7 +44,7 @@ public class TestStudent {
 		sam.addGrade("B");
 		double gpa = sam.calculateGPA();
 		System.out.println();
-		System.out.printf("Sam's GPA is %.2f", gpa);
+		System.out.printf("Sam's GPA is %.1f", gpa);
 		
 	}
 	
@@ -54,7 +54,7 @@ public class TestStudent {
 		sam.addGrade("C");
 		double gpa = sam.calculateGPA();
 		System.out.println();
-		System.out.printf("Sam's GPA is %.2f", gpa);
+		System.out.printf("Sam's GPA should be 2.0 and is %.1f", gpa);
 		
 	}
 

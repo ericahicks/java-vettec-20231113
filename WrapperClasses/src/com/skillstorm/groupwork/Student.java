@@ -63,13 +63,20 @@ public class Student {
 	
 	static boolean validGrade(String grade) {
 		// TODO 01 return true if grade is valid A B C D or F
-		return false;
+		if (grade == null || grade.isEmpty())
+			return false;
+					
+        return grade.toLowerCase().matches("[abcdf]");
 	}
 	
 	
 	public double calculateGPA() {
 		// TODO 03 Calculate GPA
-		return 0.0;
+		double sum = 0;
+		for (String s : grades) {
+			sum += convert(s);
+		}
+		return sum / grades.size();
 	}
 	
 	/**
@@ -84,11 +91,18 @@ public class Student {
 	 */
 	public double convert(String grade) {
 		// TODO 02 convert string to double
-		return 0.0;
+		switch (grade) {
+		case "A": return 4.0;
+		case "B": return 3.0;
+		case "C": return 2.0;
+		case "D": return 1.0;
+		case "F": return 0.0;
+		default: throw new IllegalArgumentException("Invalid grade: " + grade);
+		}
 	}
 	
 	public String toString() {
-		return String.format("Student %s has a gpa of %.2f", name, calculateGPA());
+		return String.format("Student %s has a gpa of %.1f", name, calculateGPA());
 	}
 
 }
