@@ -16,7 +16,12 @@ public class StudentUtilities {
 	}
 	
 	public static ArrayList<Student> getStudentsInGoodStanding(ArrayList<Student> students) {
-		// TODO 05 return all students with a GPA of 2.5 or higher
+		// TODO 05a return all students with a GPA of 2.5 or higher
+		return null;
+	}
+	
+	public static ArrayList<Student> getStudentsInGoodStanding(ArrayList<Student> students, double gpa) {
+		// TODO 05b return all students with a GPA of provided gpa or higher
 		return null;
 	}
 

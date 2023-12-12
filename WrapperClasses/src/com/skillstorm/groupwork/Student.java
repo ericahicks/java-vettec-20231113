@@ -10,7 +10,7 @@ public class Student {
 	
 	///////////////////////////////////////////////
 	// Instance properties
-	private long studentId;
+	private final long studentId;
 	
 	private String name;
 	
@@ -83,7 +83,7 @@ public class Student {
 	 * @throws IllegalArgumentException if grade is not A, B, C, D, or F
 	 */
 	public double convert(String grade) {
-		// TODO 02
+		// TODO 02 convert string to double
 		return 0.0;
 	}
 	

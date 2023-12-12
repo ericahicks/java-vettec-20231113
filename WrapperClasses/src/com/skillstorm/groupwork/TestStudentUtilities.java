@@ -75,5 +75,7 @@ public class TestStudentUtilities {
 				StudentUtilities.getStraightAStudents(students);
 		System.out.println(aStudents);
 	}
+	
+	// TODO 08 Test the getStudentsInGoodStanding
 
 }
