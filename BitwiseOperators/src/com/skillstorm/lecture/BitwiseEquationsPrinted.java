@@ -4,9 +4,12 @@ public class BitwiseEquationsPrinted {
 
 	public static void main(String[] args) {
 		example1();
-//		x & !x;
+//		x & ~x;
 		int x = 4;
-		int y = !x;
+		int y = ~x;
+		// 100
+		// 011
+		// 000
 	}
 
 

@@ -6,10 +6,15 @@ import java.util.Arrays;
 
 public class UsingBitsEfficientlyShenanigans {
 	
-	// Write a method where given a byte, figure out how many of the assigments 
+	// Write a method where given a byte, figure out how many of the assignments 
 	// the student has completed
 	public static int countCompletedAssignments(byte b) {
-		return Integer.bitCount(b);
+		// How can I make sure the top 24 bits are all zeros????
+		// 000000000000000000000000????????
+		int convertedByte = b; // 111111111111111111111101011011
+		int mask = 0b00000000000000000000000011111111;
+		int result = convertedByte & mask;
+		return Integer.bitCount(result);
 	}
 	
 	public static void main(String[] args) {
@@ -36,8 +41,8 @@ public class UsingBitsEfficientlyShenanigans {
 								+ 1 * pow(2, 2) // 00000100
 								+ 0 * pow(2, 3) // 00000000
 								+ 0 * pow(2, 4) // 00000000
-								+ 1 * pow(2, 5) // 00100000
-								+ 1 * pow(2, 6) // 01000000
+								+ 0 * pow(2, 5) // 00100000
+								+ 0 * pow(2, 6) // 01000000
 								+ 1 * pow(2, 7) // 10000000
 								 );           // = 11100111
 		System.out.println(countCompletedAssignments(samsGrades));
