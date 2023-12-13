@@ -4,6 +4,9 @@ public class BitwiseEquationsPrinted {
 
 	public static void main(String[] args) {
 		example1();
+//		x & !x;
+		int x = 4;
+		int y = !x;
 	}
 
 

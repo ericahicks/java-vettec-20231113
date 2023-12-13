@@ -6,6 +6,12 @@ import java.util.Arrays;
 
 public class UsingBitsEfficientlyShenanigans {
 	
+	// Write a method where given a byte, figure out how many of the assigments 
+	// the student has completed
+	public static int countCompletedAssignments(byte b) {
+		return Integer.bitCount(b);
+	}
+	
 	public static void main(String[] args) {
 		// Store grades for 8 assignments in an int array
 		// 0 = incomplete
@@ -34,6 +40,7 @@ public class UsingBitsEfficientlyShenanigans {
 								+ 1 * pow(2, 6) // 01000000
 								+ 1 * pow(2, 7) // 10000000
 								 );           // = 11100111
+		System.out.println(countCompletedAssignments(samsGrades));
 		System.out.println(Integer.toBinaryString(samsGrades));
 		// How many bits in memory does this take?
 		// 8 bits!
