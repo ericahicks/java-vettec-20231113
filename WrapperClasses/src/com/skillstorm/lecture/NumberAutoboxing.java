@@ -3,7 +3,9 @@ package com.skillstorm.lecture;
 public class NumberAutoboxing {
 	
 	public static void main(String[] args) {
-		Integer x  = 100;
+		// Integer values -128 to 127 inclusive are cached by the compiler
+		// https://dzone.com/articles/java-integer-cache-why-integervalueof127-integerva
+		Integer x  = 100; 
 		Integer y = x;
 		x = x + 1;
 

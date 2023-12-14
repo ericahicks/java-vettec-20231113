@@ -5,6 +5,10 @@
 # Compiled class file
 *.class
 
+# but do track .class files in commandlineexamples directory, even though you're ignoring .class files above
+!Hello.class
+!TestEnthuwareProblem.class
+
 # Log file
 *.log
 
