@@ -1,4 +1,4 @@
-package StackPractice;
+package Day1.StackPractice;
 
 public class MyStack<T> {
     

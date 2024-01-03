@@ -1,4 +1,4 @@
-package StackPractice;
+package Day1.StackPractice;
 
 //the generic is used to store data passed onto the stack
 public class Node<T> {
