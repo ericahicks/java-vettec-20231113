@@ -9,6 +9,7 @@ public class QueueExamples {
         customers.add("Bobby");
         customers.add("Sally");
         customers.add("Jim Bob");
+        //customers.addFirst("Jim Bob"); only works for deque
 
         customers.offer("Sally Sue"); // pretty much the same as add
 
